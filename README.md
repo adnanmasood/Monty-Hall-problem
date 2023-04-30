@@ -36,7 +36,7 @@ Marilyn vos Savant's explanation of the Monty Hall problem highlights the import
 
 The Monty Hall problem can be solved using programming through various approaches, such as simulation, enumeration, or direct probability calculation. Here, we'll discuss three different methods:
 
-1. Simulation:
+## Simulation:
 This method involves simulating the Monty Hall problem multiple times and observing the outcomes. By running a large number of iterations, we can estimate the probabilities of winning by switching or staying with the original choice. In a programming language like Python, you could implement a simulation as follows:
 
 ```python
@@ -70,7 +70,7 @@ print("Probability of winning by switching:", monty_hall_simulation(100000, True
 print("Probability of winning by staying with the original choice:", monty_hall_simulation(100000, False))
 ```
 
-2. Enumeration:
+## Enumeration:
 This method involves enumerating all possible scenarios and calculating the probabilities based on the outcomes. In this case, there are three possible initial choices, and Monty can open one of the two remaining doors. Using a programming language, you can calculate the probabilities by listing all the possibilities and counting the successful outcomes for switching and staying:
 
 ```python
@@ -92,7 +92,7 @@ print("Probability of winning by switching:", monty_hall_enumeration()[0])
 print("Probability of winning by staying with the original choice:", monty_hall_enumeration()[1])
 ```
 
-3. Direct probability calculation:
+##  Direct probability calculation:
 This method calculates the probabilities directly using conditional probability principles. Although this approach doesn't involve much programming, it can be implemented in a language like Python:
 
 ```python
@@ -109,7 +109,7 @@ In each of these methods, you'll observe that the probability of winning by swit
 
 In addition to the methods mentioned previously, here are two more ways to solve the Monty Hall problem using programming:
 
-4. Decision tree:
+## Decision tree:
 
 A decision tree is a tree-like structure that represents possible outcomes and decisions. You can create a decision tree to represent the Monty Hall problem and traverse it to find the probabilities of winning by switching or staying with the original choice.
 
@@ -135,7 +135,7 @@ print("Probability of winning by switching:", monty_hall_decision_tree()[0])
 print("Probability of winning by staying with the original choice:", monty_hall_decision_tree()[1])
 ```
 
-5. Using Bayesian inference:
+## Bayesian inference:
 
 Bayesian inference is a method of updating probabilities based on new evidence. You can use it to solve the Monty Hall problem by updating the probabilities of the car being behind each door after Monty reveals a goat.
 
@@ -174,7 +174,7 @@ These programming methods offer a variety of ways to analyze and solve the Monty
 
 
 
-6. Markov Chain Monte Carlo (MCMC) sampling:
+## Markov Chain Monte Carlo (MCMC) sampling:
 
 MCMC is a method for sampling from complex probability distributions, often used in Bayesian statistics. While the Monty Hall problem is relatively simple and doesn't require such an advanced technique, it can be solved using MCMC sampling as a demonstration.
 
@@ -214,7 +214,7 @@ print("Probability of winning by switching:", monty_hall_mcmc(100000)[0])
 print("Probability of winning by staying with the original choice:", monty_hall_mcmc(100000)[1])
 ```
 
-7. Recursive function:
+##  Recursive function:
 
 The Monty Hall problem can also be solved using a recursive function. Although the problem itself is not inherently recursive, you can use recursion to explore the different scenarios of the game.
 
@@ -236,7 +236,7 @@ print("Probability of winning by staying with the original choice:", monty_hall_
 ```
 
 
-8. Using Matrix Algebra:
+## Using Matrix Algebra:
 
 Matrix algebra can be used to model the Monty Hall problem, representing the different states and transitions. While this approach is not as straightforward as other methods, it offers an opportunity to explore linear algebra in the context of the problem.
 
@@ -286,7 +286,7 @@ print("Probability of winning by switching:", monty_hall_matrix()[0])
 print("Probability of winning by staying with the original choice:", monty_hall_matrix()[1])
 ```
 
-9. Dynamic Programming:
+## Dynamic Programming:
 
 Dynamic programming can be used to solve problems by breaking them down into smaller, overlapping subproblems. Although the Monty Hall problem is not a typical candidate for dynamic programming, we can model it as a three-stage decision process and use dynamic programming to find the optimal strategy.
 
@@ -318,7 +318,7 @@ print("Probability of winning by switching:", monty_hall_dynamic_programming()[0
 print("Probability of winning by staying with the original choice:", monty_hall_dynamic_programming()[1])
 ```
 
-10. Reinforcement Learning:
+## Reinforcement Learning:
 
 Reinforcement learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. Although the Monty Hall problem is not a typical candidate for reinforcement learning, we can model it as a two-stage decision process and use RL to find the optimal strategy.
 
@@ -357,9 +357,9 @@ def monty_hall_reinforcement_learning(iterations, alpha=0.1, epsilon=0.1):
 print("Probability of winning by switching:", monty_hall_reinforcement_learning(100000)[0])
 print("Probability of winning by staying with the original choice:", monty_hall_reinforcement_learning(100000)[1])
 
-----
+```
 
-13. Functional Programming:
+## Functional Programming:
 
 Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data. We can use functional programming principles to solve the Monty Hall problem.
 
@@ -385,6 +385,7 @@ print("Probability of winning by switching:", monty_hall_functional(100000, True
 print("Probability of winning by staying with the original choice:", monty_hall_functional(100000, False))
 ```
 
+## Quantum Computing 
 While quantum computing has the potential to solve certain problems more efficiently than classical computers, the Monty Hall problem with millions of doors does not benefit significantly from a quantum computing approach. Moreover, Q# is a domain-specific language for quantum computing, and it is designed to work with quantum algorithms, such as Shor's algorithm, Grover's algorithm, and quantum phase estimation.
 
 The Monty Hall problem is a probability problem and can be solved efficiently using classical computing methods, even for a large number of doors. The generalization of the Monty Hall problem to millions of doors can be done by updating the simulation or analytical methods to account for the larger number of doors.
