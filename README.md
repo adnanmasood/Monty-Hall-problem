@@ -1,5 +1,4 @@
 # Monty-Hall-problem
-Different approaches to Explore Monty Hall Problem using Modeling &amp; Simulation, as well as AI/ML
 
 The Monty Hall problem is a famous probability puzzle based on a television game show called "Let's Make a Deal," which was hosted by Monty Hall. The problem goes as follows:
 
@@ -21,7 +20,7 @@ The Monty Hall problem belongs to the general category of conditional probabilit
 The Monty Hall problem is a classic example of how our intuition can often lead us astray when it comes to probability and statistics. It highlights the importance of using a systematic approach to problem-solving and understanding the underlying principles of conditional probability.
 
 
-#Marilayn Vos Savant Incident
+## Marilayn Vos Savant Explaination
 
 Marilyn vos Savant is an American author and columnist known for her high IQ. In 1990, she addressed the Monty Hall problem in her "Ask Marilyn" column for Parade magazine. A reader asked her whether it was better to switch or stay with the original choice in the Monty Hall problem. Marilyn explained that the contestant should always switch doors, as the odds of winning would increase from 1/3 to 2/3.
 
