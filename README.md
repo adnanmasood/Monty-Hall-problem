@@ -413,3 +413,8 @@ In this example, `GenerateRandomNumber` is a Q# operation that generates a rando
 
 Keep in mind that this approach does not leverage the full power of quantum computing, and the Monty Hall problem does not require quantum computing to be solved efficiently, even for a large number of doors.
 
+
+## References
+
+The Time Everyone “Corrected” the World’s Smartest Woman 
+https://priceonomics.com/the-time-everyone-corrected-the-worlds-smartest/
