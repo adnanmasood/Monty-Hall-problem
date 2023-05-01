@@ -414,6 +414,52 @@ In this example, `GenerateRandomNumber` is a Q# operation that generates a rando
 Keep in mind that this approach does not leverage the full power of quantum computing, and the Monty Hall problem does not require quantum computing to be solved efficiently, even for a large number of doors.
 
 
+## Machine Learning
+
+In this example, we'll use a simple Monte Carlo simulation to demonstrate the optimal strategy for the Monty Hall problem. While this is not an advanced machine learning technique, it effectively illustrates the best approach to the problem.
+
+```python
+import random
+
+def monty_hall_simulation(switch_doors, num_simulations=1000):
+    winning_count = 0
+
+    for _ in range(num_simulations):
+        # Randomly place the prize behind one of the doors
+        prize_door = random.randint(1, 3)
+
+        # Randomly select a door
+        selected_door = random.randint(1, 3)
+
+        # Reveal a non-selected door that doesn't have the prize
+        available_doors = [door for door in [1, 2, 3] if door != selected_door and door != prize_door]
+        revealed_door = random.choice(available_doors)
+
+        # Switch doors if the strategy is to switch
+        if switch_doors:
+            remaining_door = [door for door in [1, 2, 3] if door != selected_door and door != revealed_door][0]
+            selected_door = remaining_door
+
+        # Check if the selected door has the prize
+        if selected_door == prize_door:
+            winning_count += 1
+
+    return winning_count / num_simulations
+
+# Run the simulation for both strategies (switching and not switching)
+switching_win_rate = monty_hall_simulation(switch_doors=True)
+staying_win_rate = monty_hall_simulation(switch_doors=False)
+
+print("Win rate when switching doors:", switching_win_rate)
+print("Win rate when staying with the initial choice:", staying_win_rate)
+```
+
+This code defines a `monty_hall_simulation` function that simulates the Monty Hall problem with the option to switch doors or stay with the initial choice. The function runs the specified number of simulations (default is 1000) and returns the winning rate.
+
+The function first randomly places the prize behind one of the doors and randomly selects a door. Then, it reveals a non-selected door without the prize. If the `switch_doors` parameter is set to `True`, the function switches to the remaining unopened door. Finally, the function checks if the selected door has the prize and updates the winning count accordingly.
+
+After defining the function, we run the simulation for both strategies (switching and not switching) and print the winning rates. The simulation results will show that the win rate is significantly higher when switching doors, confirming the optimal strategy for the Monty Hall problem.
+
 ## References
 
 The Time Everyone “Corrected” the World’s Smartest Woman 
