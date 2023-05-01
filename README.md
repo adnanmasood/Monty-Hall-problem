@@ -1,4 +1,5 @@
-# Monty-Hall-problem
+# Monty Hall Problem
+## Multiple solutions & approaches
 
 The Monty Hall problem is a famous probability puzzle based on a television game show called "Let's Make a Deal," which was hosted by Monty Hall. The problem goes as follows:
 
